@@ -5,6 +5,7 @@
 const mazecommand = document.getElementById("mazecommand");
 const pseudocode = document.getElementById('pseudocode');
 const flowchart = document.getElementById('flowchart');
+const question = document.getElementById('question');
 
 mazecommand.addEventListener('click', (e) => {
     console.log('Maze command link clicked');
@@ -26,4 +27,9 @@ flowchart.addEventListener('click', (e) => {
     return false;
 });
 
+question.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open('https://forms.office.com/r/U9jdB2i3Sp', 'Questionnaire', 'width=1500, height=1080, noopener');
+    return false;
+});
 
